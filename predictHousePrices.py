@@ -35,7 +35,6 @@ dataset = dataset.iloc[:, [3, 4, 5, 16, 17, 18, 19, 20, 27, 28, 30, 31, 40, 41,
 
 # Missing values
 dataset = dataset.dropna()
-# ??? WHY Gaussian distribution ???
 y = np.log(dataset.iloc[:, -1].values)
 
 # Encoding categorical data & Avoiding the Dummy Variable Trap by using drop_first parameter
